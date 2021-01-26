@@ -1,0 +1,12 @@
+PROBLEM: I/P- N=10
+              K=2
+         O/P- 14
+         
+         Explain: Binary representation of 10 is 1010 and we change 2nd bit from right, 0 to 1. Then it convert to 1110 that is 14.
+         
+SOLUTION:
+
+    int setKthBit(int N, int K)
+    {
+        return N | (1<<(K));
+    }
