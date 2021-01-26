@@ -1,0 +1,11 @@
+PROBLEM: I/P- N=7         (Binary representation of 7 is 111, all bits are set so output is 1)
+         O/P- 1
+         
+         I/P- N=8         (Binary representation of 8 is 100, all bits are not set so output is 0)
+         O/P- 0
+         
+SOLUTION:
+
+    int isBitSet(int N){
+        return !(N & N+1);
+    }
