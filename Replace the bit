@@ -1,0 +1,13 @@
+PROBLEM: I/P- n=13    
+              k=2
+         O/P- 9
+         
+         Explain: Binary represenation of 13 is 1101 and we want to convert 2nd bit (from left side) 1 to 0. Then it form 1001 i.e 9
+         
+SOLUTION:
+
+    int replaceBit (int n, int k)
+    {
+        int N=(log2(n))+1;              //It is used to count the digits in binary from of 'n'. n=13 => 1101 then there is 4 digits.
+        return (n & (~(1<<(N-k))));
+    }
