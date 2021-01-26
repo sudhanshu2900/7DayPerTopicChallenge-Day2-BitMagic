@@ -1,0 +1,17 @@
+Here all the elements are occured even times except one number it occure odd times. So we need to find that odd time occure number.
+
+PROBLEM: I/P- N=9
+              arr[]={1,3,2,4,3,4,2,1,2}
+              
+         O/P- 4
+         
+         
+SOLUTION:
+
+  int getOddOccurrence(int arr[], int n) {
+        int a = arr[0];
+        for(int i=1;i<n;i++){
+            a=a^arr[i];
+        }
+        return a;
+    }
