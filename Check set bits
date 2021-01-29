@@ -1,3 +1,5 @@
+Check all bits are Set or not.
+
 PROBLEM: I/P- N=7         (Binary representation of 7 is 111, all bits are set so output is 1)
          O/P- 1
          
